@@ -34,7 +34,7 @@ namespace Phase41._21ProjectMoqTesting
         [Test]
         public void RemoveStudent_Test()
         {
-            /*List<Student> expectedStudent = new List<Student>();*/
+            
             var name = "Ankit";
             var expectedStudent = 2;
             var result = School.RemoveStudent(name);
