@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase41.21ProjectMoqTesting", "Phase41.21ProjectMoqTesting\Phase41.21ProjectMoqTesting.csproj", "{A1F65BA6-87B5-4CFA-84A6-A0B81F2867DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopsSchoolData", "OopsSchoolData\OopsSchoolData.csproj", "{ACED5103-86D3-4EBB-A48C-6AC67C61FCE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1F65BA6-87B5-4CFA-84A6-A0B81F2867DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F65BA6-87B5-4CFA-84A6-A0B81F2867DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F65BA6-87B5-4CFA-84A6-A0B81F2867DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F65BA6-87B5-4CFA-84A6-A0B81F2867DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACED5103-86D3-4EBB-A48C-6AC67C61FCE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACED5103-86D3-4EBB-A48C-6AC67C61FCE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACED5103-86D3-4EBB-A48C-6AC67C61FCE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACED5103-86D3-4EBB-A48C-6AC67C61FCE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFC04459-DDC0-466F-8669-51DA59CDDF7E}
+	EndGlobalSection
+EndGlobal
