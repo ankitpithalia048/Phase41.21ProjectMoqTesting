@@ -44,7 +44,7 @@ namespace Phase41._21ProjectMoqTesting
         [Test]
         public void UpdateStudent_Test()
         {
-            /*List<Student> expectedStudent = new List<Student>();*/
+            
             var name = "Ankit";
             var expectedStudent = "Value Updated";
             var result = School.UpdateStudent(name);
