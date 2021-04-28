@@ -66,7 +66,7 @@ namespace Phase41._21ProjectMoqTesting
             Assert.AreEqual(expectedStudent, result);
         }
 
-
+        /*===============================Teacher Starting =========================*/
         [Test]
         public void AddTeacher_Test()
         {
@@ -96,6 +96,19 @@ namespace Phase41._21ProjectMoqTesting
             Assert.AreEqual(expectedStudent, result);
         }
 
+        [Test]
+        public void UpdateTeacher_Test()
+        {
+
+            var name = "Patra";
+            var expectedStudent = "Value Updated";
+            var result = School.UpdateTeacher(name);
+            Assert.AreEqual(expectedStudent, result);
+        }
+
+
+
+        /*==================================Subject Starting ===========================*/
         [Test]
         public void AddSubject_Test()
         {

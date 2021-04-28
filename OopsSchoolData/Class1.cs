@@ -134,6 +134,28 @@ namespace OopsSchoolData
 
         }
 
+        //Update Teacher
+        public string UpdateTeacher(string name)
+        {
+
+            var res = teacher.Exists(x => x.Name == name);
+            if (res)
+            {
+                var s = teacher.Find(x => x.Name.Contains(name));
+                teacher.Remove(s);
+                teacher.Insert(0, new Teacher() { Name = "Patra Updated", ClassAndSection = "11 A" });
+                var res1 = teacher.Exists(x => x.Name == "Patra Updated");
+                if (res1)
+                {
+                    return "Value Updated";
+                }
+                return "Not updated";
+
+            }
+            return "Invalid name";
+
+        }
+
 
         /* ======================================= Subject Starting===========================================*/
 
