@@ -5,6 +5,7 @@ namespace OopsSchoolData
 {
     public class SchoolData
     {
+        //Student
         List<Student> student = new List<Student>()
         {
             new Student(){ Name= "Ankit", ClassAndSection="10 A"},
@@ -13,11 +14,15 @@ namespace OopsSchoolData
 
         };
 
+        //Teacher
         List<Teacher> teacher = new List<Teacher>()
         {
-            new Teacher(){Name= "Ezil" , ClassAndSection="10 A"}
+            new Teacher(){Name= "Ezil" , ClassAndSection="10 A"},
+            new Teacher(){Name= "Patra" , ClassAndSection="11 A"},
+
         };
 
+        //Subject
         List<Subject> subject = new List<Subject>() 
         { 
             new Subject(){SubjectCode = "100", SubjectName= "Maths"},
@@ -25,11 +30,14 @@ namespace OopsSchoolData
 
         };
         private readonly OffsetStudent offsetStudent;
+
+        //Construtor
         public SchoolData(OffsetStudent _offsetStudent)
         {
             offsetStudent = _offsetStudent;
         }
         
+        //Add Student
         public int AddStudent()
         {
             Student s2 = new Student() { Name = "Shyam", ClassAndSection = "10 A" };
@@ -44,11 +52,13 @@ namespace OopsSchoolData
             return student.Count;
         }
 
+        //Get Student
         public int GetStudent()
         {
             return student.Count;
         }
 
+        //Remove a Student
         public int RemoveStudent(string name)
         {
 
@@ -63,6 +73,8 @@ namespace OopsSchoolData
             return -1;
 
         }
+
+        //Update Student
         public string UpdateStudent(string name)
         {
 
@@ -90,7 +102,9 @@ namespace OopsSchoolData
             return offsetStudent.Get();
         }
 
+        /*----------------- -----------------------Teacher Starting -----------------------------------------------*/
 
+        //Add Teacher
         public int AddTeacher(string name, string _ClassAndSection)
         {
             Teacher s1 = new Teacher() { Name = name, ClassAndSection = _ClassAndSection };
@@ -98,12 +112,32 @@ namespace OopsSchoolData
 
             return teacher.Count;
         }
-
+        //Get Teacher
         public int GetTeacher()
         {
             return teacher.Count;
         }
 
+        //Remove a Teacher
+        public int RemoveTeacher(string name)
+        {
+
+            var res = teacher.Exists(x => x.Name == name);
+            if (res)
+            {
+                var s = teacher.Find(x => x.Name.Contains(name));
+                teacher.Remove(s);
+                return teacher.Count;
+
+            }
+            return -1;
+
+        }
+
+
+        /* ======================================= Subject Starting===========================================*/
+
+        //Add Subject
         public int AddSubject(string Subjectname, string code)
         {
             Subject s1 = new Subject() { SubjectName = Subjectname, SubjectCode = code };
@@ -112,6 +146,7 @@ namespace OopsSchoolData
             return student.Count;
         }
 
+        //Get Subject
         public int GetSubject()
         {
             return subject.Count;

@@ -87,6 +87,16 @@ namespace Phase41._21ProjectMoqTesting
         }
 
         [Test]
+        public void RemoveTeacher_Test()
+        {
+
+            var name = "Patra";
+            var expectedStudent = 1;
+            var result = School.RemoveTeacher(name);
+            Assert.AreEqual(expectedStudent, result);
+        }
+
+        [Test]
         public void AddSubject_Test()
         {
             var name = "Maths";
