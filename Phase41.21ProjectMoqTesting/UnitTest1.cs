@@ -72,7 +72,7 @@ namespace Phase41._21ProjectMoqTesting
         {
             var name = "Dheeraj";
             var ClassAndSection = "11 A";
-            var ExpectedResult = 2;
+            var ExpectedResult = 3;
 
             var result = School.AddTeacher(name, ClassAndSection);
             Assert.AreEqual(ExpectedResult, result);
@@ -112,8 +112,8 @@ namespace Phase41._21ProjectMoqTesting
         [Test]
         public void AddSubject_Test()
         {
-            var name = "Maths";
-            var code = "110";
+            var name = "Chemistry";
+            var code = "120";
             var ExpectedResult = 3;
 
             var result = School.AddSubject(name, code);
@@ -127,5 +127,15 @@ namespace Phase41._21ProjectMoqTesting
             var result = School.GetSubject();
             Assert.AreEqual(expectedres, result);
         }
+        [Test]
+        public void UpdateSubject_Test()
+        {
+
+            var name = "Maths";
+            var expectedStudent = "Value Updated";
+            var result = School.UpdateSubject(name);
+            Assert.AreEqual(expectedStudent, result);
+        }
+
     }
 }
