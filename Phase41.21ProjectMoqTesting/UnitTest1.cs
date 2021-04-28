@@ -24,9 +24,7 @@ namespace Phase41._21ProjectMoqTesting
         [Test]
         public void AddStudent_Test()
         {
-           
             var ExpectedResult = 6;
-
             var result = School.AddStudent();
             Assert.AreEqual(ExpectedResult, result);
         }

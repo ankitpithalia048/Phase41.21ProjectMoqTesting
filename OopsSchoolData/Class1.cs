@@ -41,8 +41,6 @@ namespace OopsSchoolData
             student.Add(s2);
             student.Add(s3);
 
-
-
             return student.Count;
         }
 
